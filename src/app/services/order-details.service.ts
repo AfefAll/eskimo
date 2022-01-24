@@ -13,7 +13,6 @@ export class OrderDetailsService {
   public adresse:any[]=[]
 
 
-
   constructor(private http:HttpClient) { }
 glaceDetails(){
  return new Promise((res,rej)=>{

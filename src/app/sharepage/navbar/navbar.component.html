@@ -24,20 +24,19 @@
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         <li class="nav-item">
-          <a class="nav-link" routerLink="about" routerLinkActive="active-link"*ngIf="verifier"><i class="fa fa-map-marker"></i> Adresse</a>
+          <a class="nav-link" style="float: right;" routerLink="about" routerLinkActive="active-link"*ngIf="verifier"><i class="fa fa-map-marker"></i> Adresse</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="ajouterUser" routerLinkActive="active-link" *ngIf="!verifier"><i class="fa fa-user-plus"></i> S'inscrire</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="contact" routerLinkActive="active-link" *ngIf="!verifier"><i class="fa fa-user-circle"></i> Se Connecter </a>
+          <a class="nav-link" style="float: right; 	position: absolute;" routerLink="contact" routerLinkActive="active-link" *ngIf="!verifier"><i class="fa fa-user-circle"></i> Se Connecter </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="home" routerLinkActive="active-link" (click)="logout()" *ngIf="verifier"><i class="fa fa-sign-in"></i> Logout</a>
         </li>
 
       </ul>
-      
     </div>
   </div>
 </nav>
