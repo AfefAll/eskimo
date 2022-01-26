@@ -1,6 +1,7 @@
-<div class="card border-success mb-3"style="margin-top: 100px;">
+<div style="margin-top: 50px; width: 50% ; margin-left:auto; margin-right:auto;">
+  <h1> <i class="fa fa-map"></i>Nos points de vente</h1>
   <div class="card-body text-success" *ngFor="let a of data">
-    <h5 class="card-title" style="color: blue;">{{a.nom}}</h5>
-    <p class="card-text" style="color: black;">{{a.adresse}}</p>  
+    <h4 class="card-title" style="color: blue;"><i class="fa fa-map-pin"></i> {{a.nom}}</h4>
+    <h6 class="card-text" style="color: black;">{{a.adresse}}</h6>  
   </div>
 </div> 

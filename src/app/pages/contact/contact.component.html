@@ -1,7 +1,8 @@
-<div style="margin-top: 40px; font-weight: bold; width: 60%;margin-left:auto;margin-right: auto;">
-    <form  #f="ngForm" class="px-4 py-3"> 
+<div style="margin-top: 40px; font-weight: bold; width: 50%;margin-left:auto;margin-right: auto; font-size:20px;">
+  <form  #f="ngForm" class="px-4 py-3"> 
+    <h1 style="color: blue; font: size 40px;">Se Connecter</h1><br>
       <div class="mb-3">
-        <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+        <label for="exampleDropdownFormEmail1" class="form-label" >Adresse Email</label>
         <input type="email" class="form-control" #email="ngModel" ngModel name="email" placeholder="email@example.com">
       </div>
       <div class="mb-3">
@@ -11,7 +12,7 @@
       <button type="submit" class="btn btn-primary" (click)="signIn(f.value)" >Sign in</button>
     </form>
     <div class="dropdown-divider"></div>
-    <a class="dropdown-item" routerLink="/ajouterUser">New around here? Sign up</a>
+    <a class="dropdown-item" routerLink="/ajouterUser" style="font-weight: bold;">New around here? Sign up</a>
     <br>
     <div class="alert alert-danger" *ngIf="problem">{{problem}}   </div>
     <div class="alert alert-success" *ngIf="success">{{success}}   </div>

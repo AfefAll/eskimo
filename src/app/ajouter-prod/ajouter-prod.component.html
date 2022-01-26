@@ -5,7 +5,7 @@
        <label> Prix </label><input placeholder="Prix" class="form-control" type="text" #Prix="ngModel" ngModel name="Prix"><br>
        <label> image </label><input placeholder="image" class="form-control" type="text" #image="ngModel" ngModel name="image"><br>
 <img  *ngIf="f.value.image"   [src]="f.value.image" width="160px" height="120px"><br><br><br>
-<button class="btn btn-primary" (click)="onPostProduit(f.value)" >Ajouter</button>
+<button class="btn btn-primary" (click)="onPostProduit(f.value)"  routerLink="/menu">Ajouter</button>
 
     </form>
 </div>

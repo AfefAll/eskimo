@@ -1,10 +1,4 @@
-.banner
-{
-    background-image: url('../../../assets/image/fraise.jpg');
-    height: 500px;
-    background-position:center top;
-    background-size: cover ;
-}
+
 
 .content
 {
@@ -17,22 +11,19 @@
     color:#3fc060;
     font-size: 53px;
     font-weight: bold;
-    z-index: 0;
 }
 .content a
 {
     text-decoration: none;
-    background-color: #fff;
-    color: var(--primary-color);
+    background-color: #3fc060;
+    color:#fff;
     padding: 15px 20px;
     border-radius:5px;
-    z-index: 0;
 }
 .content a:hover
 {
-    background-color: var(--primary-color);
-    color: #fff;
-    z-index: 0;
+    background-color:#fff;
+    color: #3fc060;
 }
 .foodbox
 {
@@ -51,12 +42,17 @@
     margin-top:20px;
     font-weight: bold;
 }
-.voirPlusBtn
+.voirPlusBtn a
 {
     text-decoration: none;
-    background-color:rgb(48, 69, 253);
-    color:#000;
-    padding:10px 10px;
-    border-radius: 5px;
-    font-size:18px;
+    background-color: #3fc060;
+    color:#fff;
+    padding: 15px 20px;
+    border-radius:5px;
+    font-weight: bold;
+}
+.voirPlusBtn a:hover
+{
+    background-color:#fff;
+    color: #3fc060;
 }

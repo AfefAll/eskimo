@@ -1,21 +1,24 @@
-<div class="container" style="margin-top: 40px; font-weight: bold; width: 60%;margin-left:auto;margin-right: auto;" >
+<div class="container" style="margin-top: 40px; font-weight: bold; width: 50%;margin-left:auto;margin-right: auto;" >
 <form #f="ngForm" (submit)="addUser(f.value)">
+    <h1 style="color: blue; font: size 40px;">S'inscrire</h1><br>
+    <div style="font-size:20px;">
     <label class="form-label">Nom</label>
-    <input type="text" class="form-control" #nom="ngModel" ngModel name="nom">
+    <input type="text" class="form-control" #nom="ngModel" ngModel name="nom" placeholder="Nom">
 
     <label class="form-label">Prénom</label>
-    <input type="text" class="form-control" #prenom="ngModel" ngModel name="prenon">
+    <input type="text" class="form-control" #prenom="ngModel" ngModel name="prenon" placeholder="Prénom">
 
     <label class="form-label">Date de Naissance</label>
-    <input type="text" class="form-control" #date="ngModel" ngModel name="date">
+    <input type="text" class="form-control" #date="ngModel" ngModel name="date" placeholder="00/00/0000">
 
     <label class="form-label">E-mail</label>
-    <input type="text" class="form-control" #email="ngModel" ngModel name="email">
+    <input type="text" class="form-control" #email="ngModel" ngModel name="email"placeholder="email@example.com">
 
-    <label class="form-label">Password</label>
-    <input type="password" class="form-control" #password="ngModel" ngModel name="password"><br>
+    <label class="form-label">Mot de passe</label>
+    <input type="password" class="form-control" #password="ngModel" ngModel name="password"placeholder="********"><br>
     
-    <button class="btn btn-primary" type="submit" routerLink="">Créer compte</button>
+    <button class="btn btn-primary" type="submit" routerLink="/contact">Créer compte</button>
+</div>
 </form>
 
 
