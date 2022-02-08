@@ -15,13 +15,13 @@
     color:white;
     font-size: 53px;
     font-weight: bold;
-    background-color: rgba(51, 255, 51, 0.2);
+    background-color: rgba(51, 255, 51, 0.3);
     
 }
 .content a
 {
     text-decoration: none;
-    background-color: #3fc060;
+    background-color:hsl(135, 51%, 50%,0.8);
     color:#fff;
     padding: 15px 20px;
     border-radius:5px;
@@ -29,7 +29,7 @@
 .content a:hover
 {
     background-color:#fff;
-    color: #3fc060;
+    color:  #3fc060;
 }
 .foodbox
 {
@@ -51,7 +51,7 @@
 .voirPlusBtn a
 {
     text-decoration: none;
-    background-color: #3fc060;
+    background-color: hsl(135, 51%, 50%,0.8);
     color:#fff;
     padding: 15px 20px;
     border-radius:5px;

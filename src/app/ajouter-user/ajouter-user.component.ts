@@ -9,13 +9,14 @@ import { OrderDetailsService } from '../services/order-details.service';
 })
 export class AjouterUserComponent implements OnInit {
 
-  constructor(private service:OrderDetailsService , private router:Router) { }
+  constructor(private service:OrderDetailsService , private router:Router ) { }
 
   ngOnInit(): void {
 
   }
 addUser(f:any){
-this.service.onAddNewUser(f).then(()=>{
+
+  this.service.onAddNewUser(f).then(()=>{
   console.log("Ajouter avec succes");
   setTimeout(() => {
     this.router.navigate(["/home"])

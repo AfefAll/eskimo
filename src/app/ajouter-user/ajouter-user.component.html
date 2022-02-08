@@ -1,5 +1,5 @@
 <div class="container" style="margin-top: 40px; font-weight: bold; width: 50%;margin-left:auto;margin-right: auto;" >
-<form #f="ngForm" (submit)="addUser(f.value)">
+<form #f="ngForm">
     <h1 style="color: blue; font: size 40px;">S'inscrire</h1><br>
     <div style="font-size:20px;">
     <label class="form-label">Nom</label>
@@ -28,7 +28,7 @@
     <small class="text-danger" style="font-size: 14px;" *ngIf="password.errors?.['required']&&password.touched"> Mot de passe obligatoire <br> </small>
 
 
-    <button class="btn btn-primary" style="margin-top: 30px;" type="submit" routerLink="/contact" [disabled]="f.invalid">Créer compte</button>
+    <button class="btn btn-primary" style="margin-top: 30px;" (click)="addUser(f.value)" routerLink="/contact" [disabled]="f.invalid">Créer compte</button>
 </div>
 </form>
 

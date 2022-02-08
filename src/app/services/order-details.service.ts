@@ -62,6 +62,8 @@ onLogin(p:any):Promise<String>
 onAddNewUser(f:any){
   return new Promise((resolve, reject) =>{
     this.http.post("http://localhost:3000/user",f).subscribe((res)=>{
+      console.log(f);
+      
       this._verifier.next(true)
       resolve(res)
     })
