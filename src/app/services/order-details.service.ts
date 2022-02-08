@@ -11,8 +11,7 @@ export class OrderDetailsService {
   ok$=this._verifier.asObservable()
 
   public adresse:any[]=[]
-
-
+  
   constructor(private http:HttpClient) { }
   
 glaceDetails(){
@@ -60,7 +59,6 @@ onLogin(p:any):Promise<String>
     })
 }
 
-
 onAddNewUser(f:any){
   return new Promise((resolve, reject) =>{
     this.http.post("http://localhost:3000/user",f).subscribe((res)=>{
@@ -73,13 +71,9 @@ onAddNewUser(f:any){
 
 
 adresseVente(){
-  return new Promise((resolve,reject)=>{
-   this.http.get("http://localhost:3000/adresseVente").subscribe((data)=>{
-     let a:any=data
-     this.adresseVente=a
-     resolve(data)
-    })
-  }) 
+  
+   return this.http.get("http://localhost:3000/adresseVente")
+   
  }
 
 

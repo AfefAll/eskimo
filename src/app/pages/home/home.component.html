@@ -1,41 +1,43 @@
-   <div class="container"> 
-       <div  style= "width: 100%; background-position:center top; background-size: cover ; background-color: black; ">
+   <div class="container" style="z-index: 0;">
+    <div style="z-index:0px;"> 
+       <div  style="background-position:center top; background-size: cover ; z-index: 0;">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
+            <div class="carousel-indicators" style="z-index: 0;">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="banner" style=" margin-top:30px;">
+
+            <div class="carousel-caption d-none d-md-block" style=" margin-top:30px; z-index:10;">
                 <div class="content" >
-                    <h1 class="mb-5" >une petite douceur <br> chaque jour</h1>
+                    <h1 class="mb-5">Une petite douceur <br> chaque jour</h1>
                     <a routerLink="/menu">Order now <i class="fa fa-arrow-right"></i></a>
                 </div>
-                
-                   
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://www.fourniresto.com/blog/wp-content/uploads/2018/04/glaces.jpg"  class="d-block w-100" >
+            
+              <div class="carousel-inner" >
+                <div class="carousel-item active">
+                  <img width="800px" height="600px" src="https://www.fourniresto.com/blog/wp-content/uploads/2018/04/glaces.jpg"  class="d-block w-100" style="z-index: 0px;" >
+                </div>
+                <div class="carousel-item">
+                  <img  width="800px" height="600px"  src="https://i-reg.unimedias.fr/sites/art-de-vivre/files/styles/large/public/r84-glaces-sorbets_istock.jpg?auto=compress%2Cformat&crop=faces%2Cedges&cs=srgb&fit=crop&h=600&w=900" class="d-block w-100" >
+                </div>
+                <div class="carousel-item">
+                  <img  width="800px" height="600px"  src="https://i.notretemps.com/1400x787/smart/2019/08/01/dietetique-glaces-ou-sorbets-lesquels-choisir.jpeg"  class="d-block w-100" >
+                </div>
               </div>
-              <div class="carousel-item">
-                <img   src="https://i-reg.unimedias.fr/sites/art-de-vivre/files/styles/large/public/r84-glaces-sorbets_istock.jpg?auto=compress%2Cformat&crop=faces%2Cedges&cs=srgb&fit=crop&h=600&w=900" class="d-block w-100" >
-              </div>
-              <div class="carousel-item">
-                <img   src="https://i.notretemps.com/1400x787/smart/2019/08/01/dietetique-glaces-ou-sorbets-lesquels-choisir.jpeg"  class="d-block w-100" >
-              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
-        </div>.................
-         
+            </div>
+
 <!--foodbox-->
 <div class="container mt-4 mb-4">
     <h1 class="text-center mt-3" style="color:#3fc060;;">Notre Philosophie</h1>
@@ -51,4 +53,3 @@
     <div class="voirPlusBtn"><br><a routerLink="/menu" >Découvrez nos parfums </a></div>
     
 </div>
-https://i-reg.unimedias.fr/sites/art-de-vivre/files/styles/large/public/r84-glaces-sorbets_istock.jpg?auto=compress%2Cformat&crop=faces%2Cedges&cs=srgb&fit=crop&h=600&w=900

@@ -4,6 +4,5 @@ export interface Users {
     prenom: String,
     anneés: number, 
     email: String,
-    password: String  
-
+    password: String
 }

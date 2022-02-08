@@ -3,21 +3,32 @@
     <h1 style="color: blue; font: size 40px;">S'inscrire</h1><br>
     <div style="font-size:20px;">
     <label class="form-label">Nom</label>
-    <input type="text" class="form-control" #nom="ngModel" ngModel name="nom" placeholder="Nom">
+    <input type="text" class="form-control" #nom="ngModel" ngModel name="nom" placeholder="Nom" required>
+    <small class="text-danger" style="font-size: 14px;" *ngIf="nom.errors?.['required']&&nom.touched"> Nom obligatoire <br> </small>
+
 
     <label class="form-label">Prénom</label>
-    <input type="text" class="form-control" #prenom="ngModel" ngModel name="prenon" placeholder="Prénom">
+    <input type="text" class="form-control" style="font-size: 14px;" #prenom="ngModel" ngModel name="prenon" placeholder="Prénom" required >
+    <small class="text-danger" style="font-size: 14px;" *ngIf="prenom.errors?.['required']&&prenom.touched"> Prénom obligatoire <br> </small>
+
 
     <label class="form-label">Date de Naissance</label>
-    <input type="text" class="form-control" #date="ngModel" ngModel name="date" placeholder="00/00/0000">
+    <input type="date" class="form-control" #date="ngModel" ngModel name="date" required>
+    <small class="text-danger" style="font-size: 14px;" *ngIf="date.errors?.['required']&&date.touched"> Date de Naissance obligatoire <br> </small>
 
     <label class="form-label">E-mail</label>
-    <input type="text" class="form-control" #email="ngModel" ngModel name="email"placeholder="email@example.com">
+    <input type="email" class="form-control" #email="ngModel" ngModel name="email"placeholder="email@example.com" required pattern="^([A-Za-z0-9._%+-]{4,20})+@[A-Za-z0-9.-]+\.[A-Za-z0-9._%+-]{2,9}$">
+    <small class="text-danger" style="font-size: 14px;" *ngIf="email.errors?.['pattern']&&email.touched"> Email non valide <br> </small>
+    <small class="text-danger" style="font-size: 14px;" *ngIf="email.errors?.['required']&&email.touched"> Email obligatoire <br> </small>
 
     <label class="form-label">Mot de passe</label>
-    <input type="password" class="form-control" #password="ngModel" ngModel name="password"placeholder="********"><br>
-    
-    <button class="btn btn-primary" type="submit" routerLink="/contact">Créer compte</button>
+    <input type="password" class="form-control" #password="ngModel" ngModel name="password" required 
+    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+    <small class="text-danger" style="font-size: 14px;" *ngIf="password.errors?.['pattern']&&password.touched"> Mot de passe non valide <br> </small>
+    <small class="text-danger" style="font-size: 14px;" *ngIf="password.errors?.['required']&&password.touched"> Mot de passe obligatoire <br> </small>
+
+
+    <button class="btn btn-primary" style="margin-top: 30px;" type="submit" routerLink="/contact" [disabled]="f.invalid">Créer compte</button>
 </div>
 </form>
 

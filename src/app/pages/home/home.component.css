@@ -6,11 +6,17 @@
     left: 5%;
     z-index: 0;
 }
+.carousel
+{
+    z-index: 0;
+}
 .content h1
 {
-    color:#3fc060;
+    color:white;
     font-size: 53px;
     font-weight: bold;
+    background-color: rgba(51, 255, 51, 0.2);
+    
 }
 .content a
 {
